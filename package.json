@@ -17,5 +17,10 @@
 		"url": "https://github.com/tonghoangvu/duolingo-toys/issues"
 	},
 	"homepage": "https://github.com/tonghoangvu/duolingo-toys#readme",
-	"scripts": {}
+	"scripts": {
+		"lint": "eslint --ignore-path .gitignore --fix ."
+	},
+	"devDependencies": {
+		"eslint": "^8.2.0"
+	}
 }
