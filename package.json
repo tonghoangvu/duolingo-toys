@@ -18,9 +18,12 @@
 	},
 	"homepage": "https://github.com/tonghoangvu/duolingo-toys#readme",
 	"scripts": {
-		"lint": "eslint --ignore-path .gitignore --fix ."
+		"lint": "eslint --ignore-path .gitignore --fix .",
+		"format": "prettier --write ."
 	},
 	"devDependencies": {
-		"eslint": "^8.2.0"
+		"eslint": "^8.2.0",
+		"eslint-config-prettier": "^8.3.0",
+		"prettier": "^2.4.1"
 	}
 }
