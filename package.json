@@ -1,0 +1,21 @@
+{
+	"name": "duolingo-toys",
+	"version": "1.0.0",
+	"description": "A Chrome extension that makes learning on Duolingo better",
+	"main": "src/index.js",
+	"license": "MIT",
+	"author": {
+		"name": "Tong Hoang Vu",
+		"email": "tonghoangvu@outlook.com",
+		"url": "https://github.com/tonghoangvu"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/tonghoangvu/duolingo-toys.git"
+	},
+	"bugs": {
+		"url": "https://github.com/tonghoangvu/duolingo-toys/issues"
+	},
+	"homepage": "https://github.com/tonghoangvu/duolingo-toys#readme",
+	"scripts": {}
+}
