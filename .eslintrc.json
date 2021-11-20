@@ -10,6 +10,7 @@
 		"ecmaVersion": "latest"
 	},
 	"rules": {
+		"no-undef": "off", // For Chrome API object
 		"no-console": "warn",
 		"no-debugger": "warn",
 		"no-multi-spaces": "error",
