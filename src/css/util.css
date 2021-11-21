@@ -9,3 +9,7 @@ form .form-group:not(:last-child) {
 form .form-group-element:not(:first-child) {
 	margin-left: 0.25rem;
 }
+
+.disable-selection {
+	user-select: none;
+}
