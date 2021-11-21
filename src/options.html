@@ -1,12 +1,39 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 	<head>
 		<meta charset="UTF-8">
 		<title>Duolingo Toys options</title>
 		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/global.css">
+		<link rel="stylesheet" href="css/util.css">
+		<link rel="stylesheet" href="css/form-layout.css">
+		<script src="js/util.js" defer></script>
 		<script src="js/options.js" defer></script>
 	</head>
-	<body>
-		<h1>Options</h1>
+	<body class="disable-selection">
+		<form id="form">
+			<h1 class="header form-group">Options</h1>
+			<fieldset class="form-group">
+				<legend>Shortcut keys</legend>
+				<div class="form-group">
+					<input type="checkbox" name="enable-shortcut-keys"
+						class="form-group-element" id="enable-shortcut-keys">
+					<label for="enable-shortcut-keys" class="form-group-element">
+						Enable shortcut keys
+					</label>
+				</div>
+				<div class="form-group form-label-grid">
+					<label for="speak-normal-key">Speak normal</label>
+					<input type="text" placeholder="Press the key" id="speak-normal-key">
+					<label for="speak-slower-key">Speak slower</label>
+					<input type="text" placeholder="Press the key" id="speak-slower-key">
+				</div>
+			</fieldset>
+			<footer class="form-group">
+				<button id="save" class="form-group-element">Save</button>
+				<button id="cancel" class="form-group-element">Cancel</button>
+				<span id="message" class="form-group-element"></span>
+			</footer>
+		</form>
 	</body>
 </html>
