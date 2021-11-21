@@ -1,18 +1,36 @@
-document.addEventListener('keyup', event => {
-	chrome.storage.sync.get('enable-shortcut-keys', data => {
-		if (data['enable-shortcut-keys'] === true) speak(event)
-	})
+document.addEventListener('keyup', async event => {
+	const enableShortcutKeys = await getOption('enable-shortcut-keys')
+	const speakNormalKey = await getOption('speak-normal-key')
+	const speakSlowerKey = await getOption('speak-slower-key')
+	if (enableShortcutKeys === true) speak(event, speakNormalKey, speakSlowerKey)
 })
 
-function speak(event) {
+function speak(event, speakNormalKey, speakSlowerKey) {
 	// Find speaker buttons
 	const speakerButtons = document.querySelectorAll('button[data-test="speaker-button"]')
 	const speakerButtonNormal = speakerButtons[0]
-	const speakerButtonSlow = speakerButtons[1]
+	const speakerButtonSlower = speakerButtons[1]
 
 	// Check keys
-	if (event.altKey && (event.key === 'r' || event.key === 'R')) {
-		if (event.shiftKey && speakerButtonSlow) speakerButtonSlow.click()
-		else if (speakerButtonNormal) speakerButtonNormal.click()
+	if (isMatchEventKeys(event, parseKeyString(speakNormalKey))) speakerButtonNormal.click()
+	else if (isMatchEventKeys(event, parseKeyString(speakSlowerKey))) speakerButtonSlower.click()
+}
+
+function isMatchEventKeys(event, keys) {
+	return (
+		event.ctrlKey === keys.ctrlKey &&
+		event.altKey === keys.altKey &&
+		event.shiftKey === keys.shiftKey &&
+		event.key.toUpperCase() === keys.key.toUpperCase()
+	)
+}
+
+function parseKeyString(keyString) {
+	const keys = keyString.split('+')
+	return {
+		ctrlKey: keys.includes('Ctrl'),
+		altKey: keys.includes('Alt'),
+		shiftKey: keys.includes('Shift'),
+		key: keys[keys.length - 1],
 	}
 }

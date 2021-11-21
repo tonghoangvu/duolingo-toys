@@ -23,7 +23,7 @@
 	"content_scripts": [
 		{
 			"matches": ["https://*.duolingo.com/*"],
-			"js": ["js/content.js"]
+			"js": ["js/util.js", "js/content.js"]
 		}
 	],
 	"options_page": "options.html",

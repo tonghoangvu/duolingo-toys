@@ -7,6 +7,7 @@
 		<link rel="stylesheet" href="css/global.css">
 		<link rel="stylesheet" href="css/util.css">
 		<link rel="stylesheet" href="css/form-layout.css">
+		<script src="js/util.js" defer></script>
 		<script src="js/options.js" defer></script>
 	</head>
 	<body>
@@ -14,8 +15,23 @@
 			<h1 class="header form-group">Options</h1>
 			<fieldset class="form-group">
 				<legend>Shortcut keys</legend>
-				<input type="checkbox" name="enable-shortcut-keys" id="enable-shortcut-keys">
-				<label for="enable-shortcut-keys">Enable shortcut keys</label>
+				<div class="form-group">
+					<input type="checkbox" name="enable-shortcut-keys"
+						class="form-group-element" id="enable-shortcut-keys">
+					<label for="enable-shortcut-keys" class="form-group-element">
+						Enable shortcut keys
+					</label>
+				</div>
+				<div class="form-group">
+					<label for="speak-normal-key" class="form-group-element">Speak normal</label>
+					<input type="text" placeholder="Press the key"
+						class="form-group-element" id="speak-normal-key">
+				</div>
+				<div class="form-group">
+					<label for="speak-slower-key" class="form-group-element">Speak slower</label>
+					<input type="text" placeholder="Press the key"
+						class="form-group-element" id="speak-slower-key">
+				</div>
 			</fieldset>
 			<footer class="form-group">
 				<button id="save" class="form-group-element">Save</button>
