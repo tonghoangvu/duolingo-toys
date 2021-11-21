@@ -1,12 +1,27 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 	<head>
 		<meta charset="UTF-8">
 		<title>Duolingo Toys options</title>
 		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/global.css">
+		<link rel="stylesheet" href="css/util.css">
+		<link rel="stylesheet" href="css/form-layout.css">
 		<script src="js/options.js" defer></script>
 	</head>
 	<body>
-		<h1>Options</h1>
+		<form id="form">
+			<h1 class="header form-group">Options</h1>
+			<fieldset class="form-group">
+				<legend>Shortcut keys</legend>
+				<input type="checkbox" name="enable-shortcut-keys" id="enable-shortcut-keys">
+				<label for="enable-shortcut-keys">Enable shortcut keys</label>
+			</fieldset>
+			<footer class="form-group">
+				<button id="save" class="form-group-element">Save</button>
+				<button id="cancel" class="form-group-element">Cancel</button>
+				<span id="message" class="form-group-element"></span>
+			</footer>
+		</form>
 	</body>
 </html>

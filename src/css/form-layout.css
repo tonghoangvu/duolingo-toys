@@ -1,0 +1,13 @@
+body {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	padding: 1rem;
+	box-sizing: border-box;
+}
+
+form {
+	width: 100%;
+	max-width: 40rem;
+}
