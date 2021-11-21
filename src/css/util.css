@@ -1,3 +1,7 @@
+.disable-selection {
+	user-select: none;
+}
+
 form .header {
 	margin: 0;
 }
@@ -10,6 +14,13 @@ form .form-group-element:not(:first-child) {
 	margin-left: 0.25rem;
 }
 
-.disable-selection {
-	user-select: none;
+form .form-label-grid {
+	display: grid;
+	grid-template-columns: auto 1fr;
+	grid-template-rows: 1fr 1fr;
+	grid-gap: 0.5rem;
+}
+
+form .form-label-grid > label {
+	line-height: 2;
 }
