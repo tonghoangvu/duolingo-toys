@@ -2,5 +2,41 @@
 	"@description": {
 		"message": "Một tiện ích Chrome giúp việc học trên Duolingo tốt hơn",
 		"description": "Mô tả tiện ích"
+	},
+	"options__title": {
+		"message": "Tùy chọn",
+		"description": "Tiêu đề trang tùy chọn"
+	},
+	"options__save": {
+		"message": "Lưu",
+		"description": "Nút lưu"
+	},
+	"options__cancel": {
+		"message": "Hủy bỏ",
+		"description": "Nút hủy bỏ"
+	},
+	"options__message__saved": {
+		"message": "Đã lưu",
+		"description": "Thông báo đã lưu"
+	},
+	"options__message__unsaved_changes": {
+		"message": "Có thay đổi chưa lưu",
+		"description": "Thông báo có thay đổi chưa lưu"
+	},
+	"options__shortcut_keys__title": {
+		"message": "Phím tắt",
+		"description": "Tiêu đề cho nhóm phím tắt"
+	},
+	"options__shortcut_keys__enable": {
+		"message": "Bật phím tắt",
+		"description": "Tùy chọn bật phím tắt"
+	},
+	"options__shortcut_keys__speak_normal": {
+		"message": "Đọc bình thường",
+		"description": "Tùy chọn đọc bình thường"
+	},
+	"options__shortcut_keys__speak_slower": {
+		"message": "Đọc chậm hơn",
+		"description": "Tùy chọn đọc chậm hơn"
 	}
 }
