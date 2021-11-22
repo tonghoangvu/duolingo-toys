@@ -1,42 +1,32 @@
 {
 	"@description": {
-		"message": "A Chrome extension that makes learning on Duolingo better",
-		"description": "Extension description"
+		"message": "A Chrome extension that makes learning on Duolingo better"
 	},
 	"options__title": {
-		"message": "Options",
-		"description": "Options page title"
+		"message": "Options"
 	},
 	"options__save": {
-		"message": "Save",
-		"description": "Save button"
+		"message": "Save"
 	},
 	"options__cancel": {
-		"message": "Cancel",
-		"description": "Cancel button"
+		"message": "Cancel"
 	},
 	"options__message__saved": {
-		"message": "Saved",
-		"description": "Saved message"
+		"message": "Saved"
 	},
 	"options__message__unsaved_changes": {
-		"message": "Unsaved changes",
-		"description": "Unsaved changes message"
+		"message": "Unsaved changes"
 	},
 	"options__shortcut_keys__title": {
-		"message": "Shortcut keys",
-		"description": "Shortcut keys group title"
+		"message": "Shortcut keys"
 	},
 	"options__shortcut_keys__enable": {
-		"message": "Enable shortcut keys",
-		"description": "Enable shortcut keys option"
+		"message": "Enable shortcut keys"
 	},
 	"options__shortcut_keys__speak_normal": {
-		"message": "Speak normal",
-		"description": "Speak normal option"
+		"message": "Speak normal"
 	},
 	"options__shortcut_keys__speak_slower": {
-		"message": "Speak slower",
-		"description": "Speak slower option"
+		"message": "Speak slower"
 	}
 }
