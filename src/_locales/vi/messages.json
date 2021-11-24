@@ -1,0 +1,42 @@
+{
+	"@description": {
+		"message": "Một tiện ích Chrome giúp việc học trên Duolingo tốt hơn",
+		"description": "A Chrome extension that makes learning on Duolingo better"
+	},
+	"options__title": {
+		"message": "Tùy chọn",
+		"description": "Options"
+	},
+	"options__save": {
+		"message": "Lưu",
+		"description": "Save"
+	},
+	"options__cancel": {
+		"message": "Hủy bỏ",
+		"description": "Cancel"
+	},
+	"options__message__saved": {
+		"message": "Đã lưu",
+		"description": "Saved"
+	},
+	"options__message__unsaved_changes": {
+		"message": "Có thay đổi chưa lưu",
+		"description": "Unsaved changes"
+	},
+	"options__shortcut_keys__title": {
+		"message": "Phím tắt",
+		"description": "Shortcut keys"
+	},
+	"options__shortcut_keys__enable": {
+		"message": "Bật phím tắt",
+		"description": "Enable shortcut keys"
+	},
+	"options__shortcut_keys__speak_normal": {
+		"message": "Đọc bình thường",
+		"description": "Speak normal"
+	},
+	"options__shortcut_keys__speak_slower": {
+		"message": "Đọc chậm hơn",
+		"description": "Speak slower"
+	}
+}

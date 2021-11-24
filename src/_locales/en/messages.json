@@ -1,0 +1,32 @@
+{
+	"@description": {
+		"message": "A Chrome extension that makes learning on Duolingo better"
+	},
+	"options__title": {
+		"message": "Options"
+	},
+	"options__save": {
+		"message": "Save"
+	},
+	"options__cancel": {
+		"message": "Cancel"
+	},
+	"options__message__saved": {
+		"message": "Saved"
+	},
+	"options__message__unsaved_changes": {
+		"message": "Unsaved changes"
+	},
+	"options__shortcut_keys__title": {
+		"message": "Shortcut keys"
+	},
+	"options__shortcut_keys__enable": {
+		"message": "Enable shortcut keys"
+	},
+	"options__shortcut_keys__speak_normal": {
+		"message": "Speak normal"
+	},
+	"options__shortcut_keys__speak_slower": {
+		"message": "Speak slower"
+	}
+}

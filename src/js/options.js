@@ -6,24 +6,28 @@ const enableShortcutKeysInput = document.getElementById('enable-shortcut-keys')
 const speakNormalKeyInput = document.getElementById('speak-normal-key')
 const speakSlowerKeyInput = document.getElementById('speak-slower-key')
 
+applyLocalization()
+
 function assignEventHandlers() {
 	form.addEventListener('submit', event => event.preventDefault())
 	saveButton.addEventListener('click', () => {
 		saveOptions()
-		onChange('Saved')
+		onChange(getLangMessage('options__message__saved'))
 	})
 	cancelButton.addEventListener('click', () => {
 		constructOptions()
 		onChange('')
 	})
-	enableShortcutKeysInput.addEventListener('change', () => onChange('Unsaved changes'))
+	enableShortcutKeysInput.addEventListener('change', () =>
+		onChange(getLangMessage('options__message__unsaved_changes'))
+	)
 	for (const keyInput of [speakNormalKeyInput, speakSlowerKeyInput])
 		keyInput.addEventListener('keydown', event => {
 			event.preventDefault()
 			const keyString = eventKeysToKeyString(event)
 			if (keyString) {
 				event.target.value = keyString
-				onChange('Unsaved changes')
+				onChange(getLangMessage('options__message__unsaved_changes'))
 			}
 		})
 }
